@@ -1,0 +1,49 @@
+.about__card {
+  background: #2c2c6c;
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  padding: 1rem;
+  text-align: center;
+  height: 13rem;
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
+}
+
+.about__card:hover {
+  background: transparent;
+  border-color: rgba(77, 181, 255, 0.4);
+  cursor: default;
+}
+
+.about__card h5 {
+  font-size: 1.6rem;
+}
+
+.about__card small {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.about__content p {
+  margin: 2rem 0 2.6rem;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1.2rem;
+}
+
+/*  ===========================  MEDIA QUERIES FOR TABLETS (1024px) ====================== */
+@media screen and (max-width: 1024px) {
+  .about__content p {
+    margin: 1rem 0 1.5rem;
+  }
+}
+
+/*  ===========================  MEDIA QUERIES FOR MOBILES (600px) ====================== */
+@media screen and (max-width: 600px) {
+  .about__content {
+    text-align: center;
+  }
+  .about__content p {
+    margin: 1.5rem 0;
+  }
+}
+/*# sourceMappingURL=aboutCard.css.map */

@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap');
+//colors shades
+$color-bg:#1f1f38;
+$color-bg-variant:#2c2c6c;
+$color-primary:#4db5ff;
+$color-primary-variant:rgba(77,181,255,0.4);
+$color-white:#fff;
+$color-light:rgba(255,255,255,0.6); 
+
+
+// - CONTAINER WIDTH
+$container-width-lg:75%;
+$container-width-md:86%;
+$container-width-sm:90%;
+
+//-TRANSITION
+$transition:all 400ms ease;
+
+footer{
+    background: $color-primary  ;
+    padding: 3rem 0;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 7rem;
+a{
+    color:$color-bg
+}
+}
+
+.footer__logo{
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    display: inline-block;
+}
+
+.permaLinks{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;gap: 2rem;
+    margin: 0 auto 3rem;
+}
+
+.footer__socials{
+    display: flex;justify-content: center;
+    gap: 2rem;
+    margin-bottom: 4rem;
+
+    a{
+        background:$color-bg;
+        color: $color-white;
+        padding:0.8rem;
+        border-radius: 0.7rem;
+        display: flex;
+        border:1px solid transparent;
+
+        &:hover{
+background: transparent;
+color:$color-bg;
+border-color: $color-bg;
+        }
+    }
+}
+
+.footer__copyright{
+    margin-bottom: 4rem;
+    color:$color-bg;
+}
+
+/*  ===========================  MEDIA QUERIES FOR TABLETS (1024px) ====================== */
+
+@media screen and(max-width:1024px) {
+
+   
+    
+  }
+  
+  
+  /*  ===========================  MEDIA QUERIES FOR MOBILES (600px) ====================== */
+  
+  @media screen and(max-width:600px) {
+  .permaLinks{
+      flex-direction: column;
+      gap: 1.5rem;
+  }
+
+  .footer__socials{
+      margin-bottom: 2.6rem;
+  }
+   
+    
+  }
+  
+  
+  

@@ -1,0 +1,83 @@
+.container.contact__container {
+  width: 58%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30% 58%;
+      grid-template-columns: 30% 58%;
+  gap: 12%;
+}
+
+.contact__options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.2rem;
+}
+
+.contact__option {
+  background: #2c2c6c;
+  padding: 1.2rem;
+  border-radius: 1.2rem;
+  text-align: center;
+  border: 1px solid transparent;
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
+}
+
+.contact__option:hover {
+  background: transparent;
+  border-color: rgba(77, 181, 255, 0.4);
+}
+
+.contact__option a {
+  margin-top: 0.7rem;
+  display: inline-block;
+  font-size: 0.9rem;
+}
+
+.contact__option-icon {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.2rem;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  background: transparent;
+  border: 2px solid rgba(77, 181, 255, 0.4);
+  resize: none;
+  color: #fff;
+}
+
+/*  ===========================  MEDIA QUERIES FOR TABLETS (1024px) ====================== */
+@media screen and (max-width: 1024px) {
+  .container.contact__container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+/*  ===========================  MEDIA QUERIES FOR MOBILES (600px) ====================== */
+@media screen and (max-width: 600px) {
+  .container.contact__container {
+    width: 90%;
+  }
+}
+/*# sourceMappingURL=contact.css.map */

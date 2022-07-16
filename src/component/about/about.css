@@ -1,0 +1,71 @@
+.about__container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 35% 50%;
+      grid-template-columns: 35% 50%;
+  gap: 15%;
+}
+
+.about__me {
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 2rem;
+  background: linear-gradient(45deg, transparent, #4db5ff, transparent);
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.about__me-image {
+  border-radius: 2rem;
+  overflow: hidden;
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
+}
+
+.about__me-image:hover {
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+}
+
+.about__cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.icon {
+  color: #4db5ff;
+  font-size: 2rem;
+  margin-bottom: 0.9rem;
+}
+
+/*  ===========================  MEDIA QUERIES FOR TABLETS (1024px) ====================== */
+@media screen and (max-width: 1024px) {
+  .about__container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .about__me {
+    width: 50%;
+    margin: 2rem auto 4rem;
+  }
+}
+
+/*  ===========================  MEDIA QUERIES FOR MOBILES (600px) ====================== */
+@media screen and (max-width: 600px) {
+  .about__me {
+    width: 65%;
+    margin: 0 auto 3rem;
+  }
+  .about__cards {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+/*# sourceMappingURL=about.css.map */

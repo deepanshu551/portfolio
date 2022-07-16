@@ -1,0 +1,67 @@
+
+
+$color-bg:#1f1f38;
+$color-bg-variant:#2c2c6c;
+$color-primary:#4db5ff;
+$color-primary-variant:rgba(77,181,255,0.4);
+$color-white:#fff;
+$color-light:rgba(255,255,255,0.6); 
+
+
+// - CONTAINER WIDTH
+$container-width-lg:75%;
+$container-width-md:86%;
+$container-width-sm:90%;
+
+//-TRANSITION
+$transition:all 400ms ease;
+.about__card{
+    background: $color-bg-variant;
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    padding: 1rem;
+    text-align: center;
+    height: 13rem;
+transition: $transition;
+    &:hover{
+        background: transparent;
+        border-color: $color-primary-variant;
+        cursor: default;
+    }
+    h5{
+        font-size: 1.6rem;
+    }
+    small{
+        font-size: 1rem;
+        color: $color-light;
+    }
+}
+
+
+.about__content p{
+    margin: 2rem 0 2.6rem;
+    color:$color-light;
+    font-size: 1.2rem;
+}
+/*  ===========================  MEDIA QUERIES FOR TABLETS (1024px) ====================== */
+
+@media screen and(max-width:1024px) {
+    .about__content{
+        p{
+            margin: 1rem 0 1.5rem;
+        }
+    }
+}
+
+
+/*  ===========================  MEDIA QUERIES FOR MOBILES (600px) ====================== */
+
+@media screen and(max-width:600px) {
+    .about__content{
+      text-align: center;
+
+      p{
+          margin: 1.5rem 0;
+      }
+        }
+}

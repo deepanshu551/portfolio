@@ -1,0 +1,12 @@
+.experience__details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+
+.experience__details-icons {
+  margin-top: 6px;
+  color: #4db5ff;
+}
+/*# sourceMappingURL=experienceDetails.css.map */
