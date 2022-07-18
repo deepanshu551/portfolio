@@ -5,7 +5,7 @@ import {FaFacebookF,FaInstagram,FaTwitter} from 'react-icons/fa'
 const Footer = () => {
     return (
         <footer>
-            <a href="#" className="footer__logo">EGATOR</a>
+            <a href="#" className="footer__logo">😊</a>
             <ul className="permaLinks">
                 <li><a href="#">Home</a></li>
                 <li>
@@ -16,11 +16,6 @@ const Footer = () => {
                 <li>
                     <a href="#experience">
                         Experience
-                    </a>
-                </li>
-                <li>
-                    <a href="#services">
-                        Services
                     </a>
                 </li>
                 <li>
@@ -41,7 +36,7 @@ const Footer = () => {
 
             </div>
             <div className="footer__copyright">
-                <small>&copy; EGATOR Totorials. All rights reserved.</small>
+                <small>&copy;  All rights reserved.</small>
             </div>
         </footer>
     );
