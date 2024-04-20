@@ -29,15 +29,8 @@ const Footer = () => {
                     </a>
                 </li>
             </ul>
-            <div className="footer__socials">
-                <a href="https://facebook.com"><FaFacebookF/></a>
-                <a href="https://instagram.com"><FaInstagram/></a>
-                <a href="https://twitter.com"><FaTwitter/></a>
-
-            </div>
-            <div className="footer__copyright">
-                <small>&copy;  All rights reserved.</small>
-            </div>
+           
+            
         </footer>
     );
 }
