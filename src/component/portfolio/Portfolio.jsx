@@ -15,12 +15,12 @@ const Portfolio = () => {
       demo: "https://mywebmeal.netlify.app",
       img: omniImg,
     },
-    { id: "2", title: "Memories", github: "https://github.com/deepanshu551/memories", demo: "https://gregarious-pasca-46ad41.netlify.app/", img: memoriesImg },
+    { id: "2", title: "Memories", github: "https://github.com/deepanshu551/memories", demo: "https://my-memories-551.netlify.app", img: memoriesImg },
     {
       id: "3",
       title: "CRYPTO WATCH",
       github: "https://github.com/deepanshu551/cryptoFrontend",
-      demo: "https://eloquent-conkies-17a035.netlify.app/",
+      demo: "https://crypto-watch-551.netlify.app",
       img: cryptoImg,
     },
     {
