@@ -5,17 +5,21 @@ import "./contact.css";
 import { MdOutlineMailOutline } from "react-icons/md";
 import { BsWhatsapp } from "react-icons/bs";
 const Contact = () => {
-  const form = useRef();
+  const nameRef = useRef();
+  const emailRef = useRef();
+  const msgRef = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
-
+    console.log('form',nameRef.current.value);
+    let obj={from_name:`${emailRef.current.value}`,to_name:`deepanshu`,message:`${msgRef.current.value}`}
+    
     emailjs
-      .sendForm(
-        "service_pb3fgii",
-        "template_dpbk4sk",
-        form.current,
-        "3v51GWf3qJT5o7G-C"
+      .send(
+        "service_3umorxr",
+        "template_8vdj9mv",
+        obj,
+        "BzYjfgjNdM12IcPZW"
       )
       .then(
         (result) => {
@@ -56,17 +60,19 @@ const Contact = () => {
           </article>
         </div>
 
-        <form ref={form} onSubmit={sendEmail}>
+        <form onSubmit={sendEmail}>
           <input
             type="text"
             name="name"
             placeholder="Your Full Name"
             required
+            ref={nameRef}
           />
 
-          <input type="email" name="email" placeholder="Yout Email" required />
+          <input ref={emailRef} type="email" name="email" placeholder="Yout Email" required />
           <textarea
             name="message"
+            ref={msgRef}
             rows="7"
             placeholder="Yout Message"
             require
